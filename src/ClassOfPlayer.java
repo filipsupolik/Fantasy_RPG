@@ -1,15 +1,9 @@
-import java.util.ArrayList;
-
 public abstract class ClassOfPlayer {
     private String name;
     private int attack;
     private int hitpoints;
     private int defense;
-    // ArrayList with commands unique for every class of player
-    // If player write command pomoc_special, open list of special commands
-    private Commands specialCommands;
-    // List with common commands
-    // Using command pomoc, opens commands saved in comonList
+
     private Commands commands;
 
     public ClassOfPlayer(String name, int attack, int hitpoints, int defense) {
@@ -17,7 +11,6 @@ public abstract class ClassOfPlayer {
         this.attack = attack;
         this.hitpoints = hitpoints;
         this.defense = defense;
-        this.specialCommands = new Commands();
         this.commands = new Commands();
     }
 
@@ -34,7 +27,7 @@ public abstract class ClassOfPlayer {
     }
 
     public void setAttack(int attack) {
-        this.attack = attack;
+        this.attack += attack;
     }
 
     public int getHitpoints() {
@@ -42,7 +35,7 @@ public abstract class ClassOfPlayer {
     }
 
     public void setHitpoints(int hitpoints) {
-        this.hitpoints = hitpoints;
+        this.hitpoints += hitpoints;
     }
 
     public int getDefense() {
@@ -53,9 +46,5 @@ public abstract class ClassOfPlayer {
         this.defense = defense;
     }
 
-    public void createSpecialCommands(String specialCommand) {
-        this.specialCommands.add(specialCommand);
-    }
-
-    public abstract void use();
+    public abstract void use(String specialCommand);
 }

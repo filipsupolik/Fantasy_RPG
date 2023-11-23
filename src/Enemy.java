@@ -4,7 +4,7 @@ public class Enemy extends ClassOfPlayer {
     }
 
     @Override
-    public void use() {
+    public void use(String command) {
 
     }
 

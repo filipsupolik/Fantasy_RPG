@@ -16,7 +16,7 @@ public class Commands {
             if (this.allComands.contains(command)) {
                 chosenCommand = command;
             } else if (!this.allComands.contains(command)){
-                System.out.format("Command %s is not available.%n", command);
+                System.out.format("Command %s is not available.%n Try call another available command", command);
                 chosenCommand = "";
             }
         return chosenCommand;
@@ -36,8 +36,4 @@ public class Commands {
     public ArrayList<String> getAllComands() {
         return this.allComands;
     }
-    public ArrayList<String> getAllComandsSpecial() {
-        return this.allComands;
-    }
-
 }

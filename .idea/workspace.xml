@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31ec13a3-53ed-4e4f-b1b6-1d76f7fa83dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassOfPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Commands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EnemyAssasin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EnemyWarrior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Goblin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ItemType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Paladin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ranger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Warrior.java" afterDir="false" />
+    <list default="true" id="31ec13a3-53ed-4e4f-b1b6-1d76f7fa83dc" name="Changes" comment="Create class for common commands">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassOfPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassOfPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnemyGoblin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Paladin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paladin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ranger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Warrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -83,8 +78,19 @@
       <option name="presentableId" value="Default" />
       <updated>1699980996347</updated>
       <workItem from="1699980997970" duration="4402000" />
-      <workItem from="1700083667880" duration="3864000" />
+      <workItem from="1700083667880" duration="4626000" />
+      <workItem from="1700209957980" duration="1050000" />
+      <workItem from="1700232806479" duration="1278000" />
+      <workItem from="1700736768632" duration="3969000" />
     </task>
+    <task id="LOCAL-00001" summary="Create class for common commands">
+      <created>1700087719821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700087719821</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create class for common commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create class for common commands" />
   </component>
 </project>
