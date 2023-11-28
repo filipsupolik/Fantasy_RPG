@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31ec13a3-53ed-4e4f-b1b6-1d76f7fa83dc" name="Changes" comment="Create class for common commands">
+    <list default="true" id="31ec13a3-53ed-4e4f-b1b6-1d76f7fa83dc" name="Changes" comment="Add method for player abilities, and start implementing abilities">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClassOfPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassOfPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnemyGoblin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Paladin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paladin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ranger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +76,8 @@
       <workItem from="1700083667880" duration="4626000" />
       <workItem from="1700209957980" duration="1050000" />
       <workItem from="1700232806479" duration="1278000" />
-      <workItem from="1700736768632" duration="3969000" />
+      <workItem from="1700736768632" duration="4666000" />
+      <workItem from="1701194971132" duration="3351000" />
     </task>
     <task id="LOCAL-00001" summary="Create class for common commands">
       <created>1700087719821</created>
@@ -90,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700087719821</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add method for player abilities, and start implementing abilities">
+      <created>1700741212359</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700741212359</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +112,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create class for common commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create class for common commands" />
+    <MESSAGE value="Add method for player abilities, and start implementing abilities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add method for player abilities, and start implementing abilities" />
   </component>
 </project>

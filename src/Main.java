@@ -1,10 +1,18 @@
-//Postavy hodnoty statov od 1 - 10;
-// Paladin staty - name: Paladin, att: 3, hp: 7, defense: 10
-// Ranger staty - name: Ranger, att: 6, hp: 3, defense: 5
-// Warrior staty - name: Warrior, att: 8, hp: 5, def: 6
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        ClassOfPlayer player = new Paladin("Paladin", 3, 7, 10);
+        Game game = new Game();
+        System.out.println("Zvol si postavu: \n");
+        game.playerInput();
+        ClassOfPlayer hrac = game.chooseCharacter();
+        while (true) {
+            System.out.println("Zvol dalsiu akciu");
+            hrac.use(game.playerInput());
+//            System.out.println(game.getClassOfPlayer());
+
+        }
+//        ClassOfPlayer player = new Paladin("Paladin", 3, 7, 10);
 //        System.out.println( "Meno: " + player.getName() + ", " + "Hodnota utoku: " + player.getAttack());
 //        player.use("Divine smite");
 //        System.out.println( "Meno: " + player.getName() + " " + "Hodnota utoku: " + player.getAttack());
