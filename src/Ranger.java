@@ -1,46 +1,64 @@
 public class Ranger extends ClassOfPlayer {
+    // Konštruktor pre triedu Ranger
     public Ranger(String name, int attack, int hitpoints, int defense) {
         super(name, attack, hitpoints, defense);
     }
 
+    // Implementácia metódy use pre hráča typu Ranger
     @Override
     public void use(String command) {
         switch (command) {
-            case "Precise Shot":
-                this.preciseShot();
-                System.out.println("Tvoj att sa uspesne zvacsil o 3.");
+            case "vstup":
+                this.useCommand(command);
                 break;
-            case "Stealthy Approach":
-                this.stealthApproach();
-                System.out.println("Podarilo sa ti doplnit si zivoty.");
+            case "pomoc":
+                this.useCommand(command);
                 break;
-            case "Trapping":
-                this.trapping();
-                System.out.println("Tvoja obrana sa zvysila.");
+            case "otvor inventar":
+                this.useCommand(command);
                 break;
-            case "Evasive Maneuvers":
-                this.evasiveManeuvers();
+            case "Aimed Shot":
+                this.aimedShot();
+                System.out.println("Vykonaný Aimed Shot! Tvoj útok sa zvýšil o 4.");
+                break;
+            case "Stealth":
+                this.stealth();
+                System.out.println("Vykonané Stealth! Tvoja obrana sa zvýšila o 2.");
+                break;
+            case "Evasion":
+                this.evasion();
+                System.out.println("Vykonané Evasion! Tvoja obrana a útok sa dočasne zvýšili.");
+                break;
+            case "Explosive Trap":
+                this.explosiveTrap();
+                System.out.println("Vykonaná Explosive Trap! Spôsobil si škodu nepriateľovi.");
                 break;
         }
     }
 
-    //Presný lukostrelecký útok zameraný na zraniteľné miesto na tele nepriateľa, čo môže spôsobiť dodatočné poškodenie alebo efekty.
-    public void preciseShot() {
-        this.setAttack(10);
+    // Schopnosť Aimed Shot zvyšuje útok o 4
+    public void aimedShot() {
+        this.setAttack(4);
     }
 
-    // Schopnosť skrytia a pohybu bez výrazného zvukového stopy, čo umožňuje hliadkovi prichádzať k nepriateľom bez varovania.
-    public void stealthApproach() {
-
+    // Schopnosť Stealth zvyšuje obranu o 2
+    public void stealth() {
+        this.setDefense(2);
     }
 
-    // Položenie pasce, ktorá môže spôsobiť poškodenie alebo nejaký efekt nepriateľovi, keď sa dostane do blízkosti.
-    public void trapping() {
-
+    // Schopnosť Evasion dočasne zvyšuje obranu a útok
+    public void evasion() {
+        int currentDefense = this.getDefense();
+        int currentAttack = this.getAttack();
+        this.setDefense(currentDefense + 2);
+        this.setAttack(currentAttack + 2);
     }
 
-    // Rýchle pohyby a obratné manévre, ktoré umožňujú rangerovi vyhnúť sa určitým útokom, čím sa zvýši jeho šance na prežitie.
-    public void evasiveManeuvers() {
-        this.setDefense(3);
+    // Schopnosť Explosive Trap spôsobí škodu nepriateľovi
+    public void explosiveTrap() {
+        // Implementácia spôsobenia škody nepriateľovi
+        // Napríklad:
+        // enemy.takeDamage(5); // Aplikácia škody nepriateľovi
+        System.out.println("Explosive Trap spôsobilo škodu nepriateľovi!");
     }
 }

@@ -29,7 +29,6 @@ public class Commands {
     public void createCommandsList() {
         addNewCommand("vstup");
         addNewCommand("pomoc");
-        addNewCommand("pomoc_special");
         addNewCommand("otvor inventar");
     }
 
