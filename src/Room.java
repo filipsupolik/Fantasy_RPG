@@ -1,62 +1,22 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-
-public class Room {
+public enum Room {
+    ROOM1(0,1 , new Item("Flame Sword", "Ostry meč s oceľovým rezom a horiacim plameňom na ostrí.", ItemType.WEAPON), new EnemyAssasin("Shadowblade", 10, 15, 5)),
+    ROOM2(0,2, null, new EnemyGoblin("Snarlgut", 6,8,2)),
+    ROOM0(0,0, null, null),
+    ROOM3(1,0, new Item("Healing Elixir", " Malá fľaštička obsahujúca liečivý elixír. Požitím obnovuje zdravie a poskytuje určitú ochranu počas boja.", ItemType.POTION), null),
+    ROOM4(1,1, new Item(" Shadow Cloak", "Čierny plášť so špeciálnou látkou, ktorá poskytuje schopnosť zliezť do tieňov a stať sa takmer neviditeľným. Pridava obranu o 2.", ItemType.ARMOR), null),
+    ROOM5(1,2 , null, null),
+    ROOM6(2,0, null, new EnemyWarrior("Ironclad", 8,12,6)),
+    ROOM7(2,1, new Item("Poisoned Arrows", "Šípy pokryté jedovatým roztokom, ktoré môžu spôsobiť dodatočné poškodenie nepriateľovi po zasiahnutí.", ItemType.WEAPON), null),
+    ROOM8(2,2, null,null);
+    private int x;
+    private int y;
     private Item item;
-    private ClassOfPlayer enemy;
-    private Room nextRoom;
+    private Enemy enemyType;
 
-    public Room() {
-        this.item = null;
-        this.enemy = null;
-        this.nextRoom = null;
-    }
-
-    public void setItem(Item item) {
+    Room(int x, int y, Item item, Enemy enemyType) {
+        this.x = x;
+        this.y = y;
         this.item = item;
-    }
-
-    public void setEnemy(ClassOfPlayer enemy) {
-        this.enemy = enemy;
-    }
-
-    public void setNextRoom(Room nextRoom) {
-        this.nextRoom = nextRoom;
-    }
-
-    public void enterRoom() {
-        // Implementácia vstupu hráča do miestnosti
-        // Logika miestnosti, zobrazenie itemu, boj s nepriateľom a prechod do ďalšej miestnosti
-    }
-
-    public static Room loadRoomFromMap(String roomInfo) {
-        Room room = new Room();
-
-        String[] parts = roomInfo.split(":");
-        String itemNameOrEnemy = parts.length > 1 ? parts[1] : null;
-
-        if (itemNameOrEnemy != null) {
-            if (itemNameOrEnemy.startsWith("Item")) {
-                Item item = new Item(itemNameOrEnemy);
-                room.setItem(item);
-            } else if (itemNameOrEnemy.startsWith("Enemy")) {
-                ClassOfPlayer enemy = new Enemy(itemNameOrEnemy, 2,3,4);
-                room.setEnemy(enemy);
-            }
-        }
-        return room;
-    }
-
-    public static void loadMap(String filename) {
-        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                Room room = this.loadRoomFromMap(line);
-                // Tu môžeš pokračovať so spracovaním načítanej miestnosti
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        this.enemyType = enemyType;
     }
 }

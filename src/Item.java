@@ -3,8 +3,10 @@ public class Item {
     private String description;
     private ItemType itemType;
 
-    public Item(String name) {
+    public Item(String name, String description, ItemType itemType) {
         this.name = name;
+        this.description = description;
+        this.itemType = itemType;
     }
 
     public String getName() {

@@ -6,16 +6,16 @@
 import java.util.Scanner;
 
 public class Game {
-    private ClassOfPlayer classOfPlayer;
     private Scanner sc;
     private Inventory inventory;
-    private Room room;
-    private Commands command;
+    private Room[][] hraciaPlocha;
+    private Player player;
 
     public Game() {
         this.sc = new Scanner(System.in);
-        this.command = new Commands();
-        this.command.createCommandsList();
+        this.player = new Player();
+        this.hraciaPlocha = new Room[3][3];
+        this.addRooms();
         System.out.println("Vitaj v hre! Vyber si postavu:");
         System.out.println("1. Warrior");
         System.out.println("2. Ranger");
@@ -23,37 +23,16 @@ public class Game {
         System.out.print("Zadaj číslo postavy: ");
     }
 
-    public ClassOfPlayer chooseCharacter(String command) {
-        String character = "";
-        String notInput = null;
-        switch (command) {
-            case "1":
-                this.classOfPlayer = new Paladin("Paladin", 3, 7, 10);
-                character = "Paladin";
-                break;
-            case "2":
-                this.classOfPlayer = new Ranger("Ranger", 6, 3, 5);
-                character = "Ranger";
-                break;
-            case "3":
-                this.classOfPlayer = new Warrior("Warrior", 8, 5, 7);
-                character = "Warrior";
-                break;
-            default:
-                System.out.println("Nepoznam zvolenu postavu, zadaj platny vstup.");
-                notInput = "";
-        }
-        if (notInput == "") {
-            this.chooseCharacter(command);
-        } else {
-            System.out.format("Zvolil si postavu: %s \n", character);
-            System.out.format("Tvoje staty na zaciatku hry su: Utok: %d, Zivoty: %d, Obrana: %d \n", this.classOfPlayer.getAttack(), this.classOfPlayer.getHitpoints(), this.classOfPlayer.getDefense());
-        }
-        return this.classOfPlayer;
-    }
-
-    public ClassOfPlayer getClassOfPlayer() {
-        return classOfPlayer;
+    public void addRooms() {
+        this.hraciaPlocha[0][0] = Room.ROOM0;
+        this.hraciaPlocha[0][1] = Room.ROOM1;
+        this.hraciaPlocha[0][2] = Room.ROOM2;
+        this.hraciaPlocha[1][0] = Room.ROOM3;
+        this.hraciaPlocha[1][1] = Room.ROOM4;
+        this.hraciaPlocha[1][2] = Room.ROOM5;
+        this.hraciaPlocha[2][0] = Room.ROOM6;
+        this.hraciaPlocha[2][1] = Room.ROOM7;
+        this.hraciaPlocha[2][2] = Room.ROOM8;
     }
 
     public String playerInput() {
@@ -61,25 +40,42 @@ public class Game {
         return input;
     }
 
-    // Metóda pre výpis príkazov, ktoré môže hráč použiť
-    public void displaySpecialCommands() {
-        switch (this.getClassOfPlayer().toString()) {
-            case "Paladin":
-                System.out.println("1. Divine Smite / Lay On Hands / Aura Of Protection / Righteous Retribution");
+    public void gameLoop() {
+        String command;
+        do {
+            command = this.playerInput();
+            this.player.chooseCharacter(command);
+        } while (player == null);
+
+        while (true) {
+            System.out.println("Zadaj príkaz pre postavu:" + player.getClassOfPlayer().toString());
+            System.out.println("1. Vseobecny prikaz");
+            System.out.println("2. Prikaz pre schopnost postavy");
+            // Get player input for their action/command
+            command = this.playerInput(); // Update the command variable
+            switch (command) {
+                case "1":
+                    player.displayCommands();
+                    command = this.playerInput();
+                    break;
+                case "2":
+                    player.displaySpecialCommands();
+                    command = this.playerInput();
+                    break;
+            }
+            player.getClassOfPlayer().use(command);
+
+            // Check the game over condition and end the loop if it's met
+            if (gameOverCondition()) {
+                System.out.println("Hra skončila. Ďakujeme za hranie!");
                 break;
-            case "Warrior":
-                System.out.println("3. Mighty Strike / Shield Bash / Defensive Stance / War Cry");
-                break;
-            case "Ranger":
-                System.out.println("2. Aimed Shot / Stealth / Evasion / Explosive Trap");
-                // Ďalšie možné príkazy alebo možnosti interakcie so svetom hry
-                System.out.print("Tvoj príkaz: ");
+            }
         }
     }
-
-    public void displayCommands() {
-        System.out.println("Vseobecne prikazy " + this.command.getAllComands());
-        // Ďalšie možné príkazy alebo možnosti interakcie so svetom hry
-        System.out.print("Tvoj príkaz: ");
+    // Metóda pre kontrolu ukončenia hry
+    private boolean gameOverCondition() {
+        // Implementácia podľa logiky hry, ktorá určuje, kedy hra končí
+        // Napríklad po dosiahnutí určitého stavu alebo podmienky
+        return false; // Tu môže byť podmienka ukončenia hry
     }
 }
