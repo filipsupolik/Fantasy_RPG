@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public abstract class ClassOfPlayer {
     private String name;
     private int attack;
@@ -46,26 +48,11 @@ public abstract class ClassOfPlayer {
         this.defense = defense;
     }
 
+    public ArrayList<String> getCommands() { return this.commands.getAllComands();}
+
     @Override
     public String toString() {
         return this.name;
-    }
-
-    public void useCommand(String command) {
-        switch (command) {
-            case "vstup":
-                System.out.println("Hrac vstupuje do miestnosti");
-                break;
-            case "pomoc":
-                System.out.println("Prikazy ktore sa daju pouzit: " + this.commands.getAllComands());
-                break;
-            case "otvor inventar":
-                System.out.println("Predmety v tvojom inventari: ");
-                break;
-            default:
-                System.out.println("Zadany prikaz nie je spravny, zadaj iny prikaz: ");
-                this.useCommand(command);
-        }
     }
 
     public abstract void use(String specialCommand);

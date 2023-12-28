@@ -10,6 +10,21 @@ public class Player {
         this.command.createCommandsList();
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
     public ClassOfPlayer chooseCharacter(String command) {
         String character = "";
         String notInput = null;
@@ -64,4 +79,46 @@ public class Player {
         // Ďalšie možné príkazy alebo možnosti interakcie so svetom hry
         System.out.print("Tvoj príkaz: ");
     }
+
+    public void move(String direction) {
+        switch (direction) {
+            case "vpravo":
+                this.y++;
+                break;
+            case "vlavo":
+                this.y--;
+                break;
+            case "hore":
+                this.x--;
+                break;
+            case "dole":
+                this.x++;
+                break;
+            default:
+                System.out.println("Neplatný smer pohybu.");
+                break;
+        }
+    }
+
+    public void performAction(String action) {
+        switch (action) {
+            case "prehľadaj":
+                System.out.println("Prehľadávaš miestnosť.");
+                // Logika pre prehľadávanie miestnosti
+                break;
+            case "bojuj":
+                System.out.println("Bojuješ s nepriateľom.");
+                // Logika pre boj s nepriateľom
+                break;
+            case "použi":
+                System.out.println("Používaš predmet.");
+                // Logika pre použitie predmetu
+                break;
+            default:
+                System.out.println("Neplatná akcia.");
+                break;
+        }
+    }
+
+
 }

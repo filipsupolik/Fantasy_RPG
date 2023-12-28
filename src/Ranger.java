@@ -9,13 +9,13 @@ public class Ranger extends ClassOfPlayer {
     public void use(String command) {
         switch (command) {
             case "vstup":
-                this.useCommand(command);
+                System.out.println("Zvol smer: vpravo, vlavo, hore, dole");
                 break;
             case "pomoc":
-                this.useCommand(command);
+                System.out.println("Prikazy ktore sa daju pouzit: " + this.getCommands());
                 break;
             case "otvor inventar":
-                this.useCommand(command);
+                System.out.println("Predmety v tvojom inventari: ");
                 break;
             case "Aimed Shot":
                 this.aimedShot();

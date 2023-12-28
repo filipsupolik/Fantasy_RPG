@@ -1,22 +1,45 @@
 public enum Room {
-    ROOM1(0,1 , new Item("Flame Sword", "Ostry meč s oceľovým rezom a horiacim plameňom na ostrí.", ItemType.WEAPON), new EnemyAssasin("Shadowblade", 10, 15, 5)),
-    ROOM2(0,2, null, new EnemyGoblin("Snarlgut", 6,8,2)),
-    ROOM0(0,0, null, null),
-    ROOM3(1,0, new Item("Healing Elixir", " Malá fľaštička obsahujúca liečivý elixír. Požitím obnovuje zdravie a poskytuje určitú ochranu počas boja.", ItemType.POTION), null),
-    ROOM4(1,1, new Item(" Shadow Cloak", "Čierny plášť so špeciálnou látkou, ktorá poskytuje schopnosť zliezť do tieňov a stať sa takmer neviditeľným. Pridava obranu o 2.", ItemType.ARMOR), null),
-    ROOM5(1,2 , null, null),
-    ROOM6(2,0, null, new EnemyWarrior("Ironclad", 8,12,6)),
-    ROOM7(2,1, new Item("Poisoned Arrows", "Šípy pokryté jedovatým roztokom, ktoré môžu spôsobiť dodatočné poškodenie nepriateľovi po zasiahnutí.", ItemType.WEAPON), null),
-    ROOM8(2,2, null,null);
-    private int x;
-    private int y;
-    private Item item;
-    private Enemy enemyType;
+    ROOM_00("Vstupna miestnost", 0, 0, new Item("Sword", ItemType.WEAPON), new EnemyGoblin("Goblin", 10, 5, 4)),
+    ROOM_01("Room01", 0, 1, new Item("Potion", ItemType.POTION), null),
+    ROOM_02("Room02", 0, 2, null, new EnemyWarrior("Dragon", 50, 20, 10)),
+    ROOM_10("Room03", 1, 0, null, null),
+    ROOM_11("Room04", 1, 1, new Item("Shield", ItemType.ARMOR), null),
+    ROOM_12("Room05", 1, 2, new Item("Bow", ItemType.WEAPON), null),
+    ROOM_20("Room06", 2, 0, null, new Enemy("Zombie", 20, 10, 2)),
+    ROOM_21("Room07", 2, 1, new Item("Healing Potion", ItemType.POTION), null),
+    ROOM_22("Konecna miestnost", 2, 2, null, null);
 
-    Room(int x, int y, Item item, Enemy enemyType) {
+    private final String name;
+    private final int x;
+    private final int y;
+    private final Item item;
+    private final Enemy enemy;
+
+    Room(String name, int x, int y, Item item, Enemy enemy) {
+        this.name = name;
         this.x = x;
         this.y = y;
         this.item = item;
-        this.enemyType = enemyType;
+        this.enemy = enemy;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public String getItem() {
+        return this.item.getName();
+    }
+
+    public String getEnemy() {
+        return this.enemy.getName();
+    }
+
+    public String getName() {
+        return name;
     }
 }
