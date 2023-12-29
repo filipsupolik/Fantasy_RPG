@@ -7,7 +7,6 @@ public class Player {
 
     public Player() {
         this.command = new Commands();
-        this.command.createCommandsList();
     }
 
     public int getX() {
@@ -25,6 +24,11 @@ public class Player {
     public void setY(int y) {
         this.y = y;
     }
+
+    public Commands getCommandInstance() {
+        return command;
+    }
+
     public ClassOfPlayer chooseCharacter(String command) {
         String character = "";
         String notInput = null;
@@ -73,50 +77,38 @@ public class Player {
     public ClassOfPlayer getClassOfPlayer() {
         return classOfPlayer;
     }
-
-    public void displayCommands() {
-        System.out.println("Vseobecne prikazy " + this.command.getAllComands());
-        // Ďalšie možné príkazy alebo možnosti interakcie so svetom hry
-        System.out.print("Tvoj príkaz: ");
-    }
-
-    public void move(String direction) {
+    public boolean move(String direction) {
+        int newX = this.x;
+        int newY = this.y;
         switch (direction) {
             case "vpravo":
                 this.y++;
-                break;
+                System.out.println("Nachadzas sa v miestnosti: " + this.x + " " + this.y);
+                return true;
             case "vlavo":
                 this.y--;
-                break;
+                System.out.println("Nachadzas sa v miestnosti: " + this.x + " " + this.y);
+                return true;
             case "hore":
                 this.x--;
-                break;
+                System.out.println("Nachadzas sa v miestnosti: " + this.x + " " + this.y);
+                return true;
             case "dole":
                 this.x++;
-                break;
+                System.out.println("Nachadzas sa v miestnosti: " + this.x + " " + this.y);
+                return true;
             default:
                 System.out.println("Neplatný smer pohybu.");
                 break;
         }
-    }
-
-    public void performAction(String action) {
-        switch (action) {
-            case "prehľadaj":
-                System.out.println("Prehľadávaš miestnosť.");
-                // Logika pre prehľadávanie miestnosti
-                break;
-            case "bojuj":
-                System.out.println("Bojuješ s nepriateľom.");
-                // Logika pre boj s nepriateľom
-                break;
-            case "použi":
-                System.out.println("Používaš predmet.");
-                // Logika pre použitie predmetu
-                break;
-            default:
-                System.out.println("Neplatná akcia.");
-                break;
+        if (newX >= 0 && newX < 3 && newY >= 0 && newY < 3) {
+            this.x = newX;
+            this.y = newY;
+            System.out.println("Nachadzas sa v miestnosti: " + this.x + " " + this.y);
+            return true;
+        } else {
+            System.out.println("Nemozes ist tade, je to mimo priestoru.");
+            return false;
         }
     }
 

@@ -20,4 +20,13 @@ public class Inventory {
             System.out.println(item);
         }
     }
+
+    public Item getItemFromInventory(String itemName) {
+        for (Item item : this.items) {
+            if (item.getName().equalsIgnoreCase(itemName)) {
+                return item;
+            }
+        }
+        return null; // Ak sa item nenájde, vráti null
+    }
 }

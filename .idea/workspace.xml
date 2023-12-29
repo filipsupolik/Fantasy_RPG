@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31ec13a3-53ed-4e4f-b1b6-1d76f7fa83dc" name="Changes" comment="Adding rooms for player movement">
+    <list default="true" id="31ec13a3-53ed-4e4f-b1b6-1d76f7fa83dc" name="Changes" comment="Started with player movement, need some bug fixing and fix some implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClassOfPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassOfPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Paladin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paladin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ranger.java" afterDir="false" />
@@ -92,7 +93,8 @@
       <workItem from="1701880811797" duration="8435000" />
       <workItem from="1703610676682" duration="3550000" />
       <workItem from="1703760091810" duration="5315000" />
-      <workItem from="1703765724550" duration="10503000" />
+      <workItem from="1703765724550" duration="10596000" />
+      <workItem from="1703844761245" duration="15459000" />
     </task>
     <task id="LOCAL-00001" summary="Create class for common commands">
       <created>1700087719821</created>
@@ -129,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703622389769</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Started with player movement, need some bug fixing and fix some implementation">
+      <created>1703797732924</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703797732924</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +161,7 @@
     <MESSAGE value="Implemented choosing character" />
     <MESSAGE value="Classes for player characters done, commands player working" />
     <MESSAGE value="Adding rooms for player movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding rooms for player movement" />
+    <MESSAGE value="Started with player movement, need some bug fixing and fix some implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started with player movement, need some bug fixing and fix some implementation" />
   </component>
 </project>

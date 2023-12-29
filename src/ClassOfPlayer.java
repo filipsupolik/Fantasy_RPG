@@ -48,7 +48,31 @@ public abstract class ClassOfPlayer {
         this.defense = defense;
     }
 
-    public ArrayList<String> getCommands() { return this.commands.getAllComands();}
+    public void useItem(Item item) {
+        if (item != null) {
+            switch (item.getItemType()) {
+                case WEAPON:
+                    this.setAttack(3);
+                    System.out.println("Použil si zbraň: " + item.getName());
+                    break;
+                case ARMOR:
+                    this.setDefense(3);
+                    System.out.println("Použil si brnenie: " + item.getName());
+                    break;
+                case POTION:
+                    this.setHitpoints(2);
+                    System.out.println("Použil si lektvar: " + item.getName());
+                    break;
+                default:
+                    // Ak ide o iný typ itemu, môžeš sem pridať ďalšie case pre rôzne typy
+                    System.out.println("Nepodporovaný typ itemu.");
+                    break;
+            }
+        } else {
+            System.out.println("Item neexistuje v inventári.");
+        }
+    }
+
 
     @Override
     public String toString() {

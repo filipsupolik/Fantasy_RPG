@@ -8,15 +8,6 @@ public class Ranger extends ClassOfPlayer {
     @Override
     public void use(String command) {
         switch (command) {
-            case "vstup":
-                System.out.println("Zvol smer: vpravo, vlavo, hore, dole");
-                break;
-            case "pomoc":
-                System.out.println("Prikazy ktore sa daju pouzit: " + this.getCommands());
-                break;
-            case "otvor inventar":
-                System.out.println("Predmety v tvojom inventari: ");
-                break;
             case "Aimed Shot":
                 this.aimedShot();
                 System.out.println("Vykonaný Aimed Shot! Tvoj útok sa zvýšil o 4.");

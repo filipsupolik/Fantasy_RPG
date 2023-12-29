@@ -31,12 +31,12 @@ public enum Room {
         return y;
     }
 
-    public String getItem() {
-        return this.item.getName();
+    public Item getItem() {
+        return this.item;
     }
 
-    public String getEnemy() {
-        return this.enemy.getName();
+    public Enemy getEnemy() {
+        return this.enemy;
     }
 
     public String getName() {
