@@ -1,8 +1,27 @@
+/**
+ * The Paladin class represents a character of the Paladin class in the game.
+ * It extends the ClassOfPlayer abstract class and implements specific abilities of a Paladin.
+ * @author Filip Šupolík
+ * @version 1.0
+ */
 public class Paladin extends ClassOfPlayer {
+    /**
+     * Constructs a Paladin object with specified attributes.
+     *
+     * @param name     The name of the Paladin
+     * @param attack   The attack power of the Paladin
+     * @param hitpoints The hitpoints (health) of the Paladin
+     * @param defense  The defense capability of the Paladin
+     */
     public Paladin(String name, int attack, int hitpoints, int defense) {
         super(name, attack, hitpoints, defense);
     }
 
+    /**
+     * Defines the usage of various abilities by the Paladin based on given commands.
+     *
+     * @param command The command representing the ability the Paladin wants to use
+     */
     @Override
     public void use(String command) {
         switch (command) {
@@ -30,12 +49,17 @@ public class Paladin extends ClassOfPlayer {
         }
     }
 
-    // Pridanie božskej sily k útoku, čo zvacsi att o 3
+    /**
+     * dmg = damage
+     * Adds dmg by 3 to Paladin dmg
+     */
     public void useDivineSmite() {
         this.setAttack(3);
     }
 
-    // Schopnosť liečiť seba dotykom, prenesením liečivé energie.
+    /**
+     * Ability for healing missing health
+     */
     // Ked bude Enemy done, zmenit tak aby sa pocitalo kolko zivota si ma pridat
     public void useLayOnHands() {
         int aktualneZivoty = this.getHitpoints();
@@ -46,14 +70,19 @@ public class Paladin extends ClassOfPlayer {
         }
     }
 
-    // Aktivácia ochranného pole okolo seba, čo zvyšuje odolnosť voči zraneniam.
+    /**
+     * Player increase his defense to take less dmg
+     */
     public void useAuraOfProtection() {
         this.setDefense(5);
     }
 
-    // Po obdržaní poškodenia sa paladin môže brániť spätným útokom s dodatočným bonusom poškodenia počas svojho ďalšieho ťahu.
+    /**
+     * After receiving dmg, he takes some dmg as bonus dmg to his abilities
+     * @param receivedDamage
+     */
     public void useRighteousRetribution(int receivedDamage) {
-        int bonusDamage = calculateBonusDamage(receivedDamage); // Výpočet bonusového poškodenia
+        int bonusDamage = this.calculateBonusDamage(receivedDamage); // Výpočet bonusového poškodenia
 
         // Implementácia spravodlivej odplaty
         if (bonusDamage > 0) {
@@ -67,6 +96,11 @@ public class Paladin extends ClassOfPlayer {
         }
     }
 
+    /**
+     * Calculation for bonus dmg
+     * @param receivedDamage
+     * @return
+     */
     private int calculateBonusDamage(int receivedDamage) {
         // Implementácia výpočtu bonusového poškodenia na základe prijatého poškodenia
         // Tu môžeš implementovať logiku, ako sa vypočíta bonusové poškodenie

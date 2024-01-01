@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.revapi:revapi-java-spi:0.23.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/revapi/revapi-java-spi/0.23.6/revapi-java-spi-0.23.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/revapi/revapi-java-spi/0.23.6/revapi-java-spi-0.23.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/revapi/revapi-java-spi/0.23.6/revapi-java-spi-0.23.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

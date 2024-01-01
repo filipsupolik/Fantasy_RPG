@@ -1,10 +1,29 @@
+/**
+ * The Ranger class represents a character of type Ranger in the game.
+ * It inherits attributes and methods from the ClassOfPlayer abstract class.
+ *
+ * @author FILIP Šupolík
+ * @version 1.0
+ */
 public class Warrior extends ClassOfPlayer {
-    // Konštruktor pre triedu Warrior
+    /**
+     * Constructor for the Warrior class.
+     * Initializes the Warrior character with specified attributes.
+     *
+     * @param name     The name of the Ranger character
+     * @param attack   The attack points of the Ranger
+     * @param hitpoints The hit points of the Ranger
+     * @param defense  The defense points of the Ranger
+     */
     public Warrior(String name, int attack, int hitpoints, int defense) {
         super(name, attack, hitpoints, defense);
     }
 
-    // Implementácia metódy use pre bojovníka
+    /**
+     * Overrides the use method to define specific actions for the Ranger character based on the provided command.
+     *
+     * @param command The command representing the action the Ranger will perform
+     */
     @Override
     public void use(String command) {
         switch (command) {
@@ -27,17 +46,23 @@ public class Warrior extends ClassOfPlayer {
         }
     }
 
-    // Schopnosť Mighty Strike zvyšuje útok o 5
+    /**
+     * Increases the Warrior's attack by 5 when using the Aimed Shot ability.
+     */
     public void mightyStrike() {
         this.setAttack(5);
     }
 
-    // Schopnosť Shield Bash zvyšuje obranu o 3
+    /**
+     * Increases the Ranger's defense by 3 when using the Stealth ability.
+     */
     public void shieldBash() {
         this.setDefense(3);
     }
 
-    // Schopnosť Defensive Stance zdvojnásobí obranu a zníži útok
+    /**
+     * Temporarily increases both the warrior's defense and attack by 2
+     */
     public void defensiveStance() {
         int currentDefense = this.getDefense();
         int currentAttack = this.getAttack();
@@ -45,7 +70,9 @@ public class Warrior extends ClassOfPlayer {
         this.setAttack(currentAttack / 2);
     }
 
-    // Schopnosť War Cry zvyšuje útok, ale zníži obranu
+    /**
+     * Temporarily decrease the Warrior's defense by 2 but increase attack by 3 when using the War Cry ability.
+     */
     public void warCry() {
         int currentAttack = this.getAttack();
         int currentDefense = this.getDefense();

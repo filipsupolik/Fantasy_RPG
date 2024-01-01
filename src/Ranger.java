@@ -1,10 +1,29 @@
+/**
+ * The Ranger class represents a character of type Ranger in the game.
+ * It inherits attributes and methods from the ClassOfPlayer abstract class.
+ *
+ * @author FILIP Šupolík
+ * @version 1.0
+ */
 public class Ranger extends ClassOfPlayer {
-    // Konštruktor pre triedu Ranger
+    /**
+     * Constructor for the Ranger class.
+     * Initializes the Ranger character with specified attributes.
+     *
+     * @param name     The name of the Ranger character
+     * @param attack   The attack points of the Ranger
+     * @param hitpoints The hit points of the Ranger
+     * @param defense  The defense points of the Ranger
+     */
     public Ranger(String name, int attack, int hitpoints, int defense) {
         super(name, attack, hitpoints, defense);
     }
 
-    // Implementácia metódy use pre hráča typu Ranger
+    /**
+     * Overrides the use method to define specific actions for the Ranger character based on the provided command.
+     *
+     * @param command The command representing the action the Ranger will perform
+     */
     @Override
     public void use(String command) {
         switch (command) {
@@ -27,17 +46,23 @@ public class Ranger extends ClassOfPlayer {
         }
     }
 
-    // Schopnosť Aimed Shot zvyšuje útok o 4
+    /**
+     * Increases the Ranger's attack by 4 when using the Aimed Shot ability.
+     */
     public void aimedShot() {
         this.setAttack(4);
     }
 
-    // Schopnosť Stealth zvyšuje obranu o 2
+    /**
+     * Increases the Ranger's defense by 2 when using the Stealth ability.
+     */
     public void stealth() {
         this.setDefense(2);
     }
 
-    // Schopnosť Evasion dočasne zvyšuje obranu a útok
+    /**
+     * Temporarily increases both the Ranger's defense and attack by 2 when using the Evasion ability.
+     */
     public void evasion() {
         int currentDefense = this.getDefense();
         int currentAttack = this.getAttack();
@@ -45,7 +70,10 @@ public class Ranger extends ClassOfPlayer {
         this.setAttack(currentAttack + 2);
     }
 
-    // Schopnosť Explosive Trap spôsobí škodu nepriateľovi
+    /**
+     * Executes the Explosive Trap ability, causing damage to the enemy.
+     * Note: Implementation requires interaction with the 'enemy' object or its equivalent in the game.
+     */
     public void explosiveTrap() {
         // Implementácia spôsobenia škody nepriateľovi
         // Napríklad:

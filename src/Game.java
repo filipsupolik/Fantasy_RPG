@@ -1,8 +1,11 @@
-//Postavy hodnoty statov od 1 - 10;
-// Paladin staty - name: Paladin, att: 3, hp: 7, defense: 10
-// Ranger staty - name: Ranger, att: 6, hp: 3, defense: 5
-// Warrior staty - name: Warrior, att: 8, hp: 5, def: 6
 
+/**
+ * The class represents the game engine, managing the game's flow.
+ * It allows the player to interact with rooms, select a character, and perform various actions.
+ * It encompasses the game loop and methods for managing the game flow.
+ * @author Filip Šupolík
+ * @version 1.0
+ */
 public class Game {
     private boolean firstEntry;
     private Inventory inventory;
@@ -10,14 +13,24 @@ public class Game {
     private Player player;
     private boolean endOfGame;
 
+
+    /**
+     * Constructor creating an instance of the `Game` class.
+     * Initializes necessary variables and the game environment.
+     * Contains main loop for game
+     */
     public Game() {
         this.firstEntry = true;
         this.player = new Player();
         this.hraciaPlocha = new Room[3][3];
         this.addRooms();
         this.endOfGame = false;
+        this.inventory = new Inventory();
     }
 
+    /**
+     * Initializes the game rooms and adds them to the game space.
+     */
     public void addRooms() {
         this.hraciaPlocha[0][0] = Room.ROOM_00;
         this.hraciaPlocha[0][1] = Room.ROOM_01;
@@ -30,6 +43,10 @@ public class Game {
         this.hraciaPlocha[2][2] = Room.ROOM_22;
     }
 
+    /**
+     * Initiates the main game loop, where the player interacts with the game.
+     * Allows character selection, movement, room interaction, and action execution.
+     */
     public void gameLoop() {
         String command;
         System.out.println("Vitaj v hre! Vyber si postavu:");
@@ -40,7 +57,7 @@ public class Game {
         do {
             command = this.player.getCommandInstance().charChooseCheck();
             this.player.chooseCharacter(command);
-        } while (player == null);
+        } while (this.player == null);
 
         System.out.println("Si pripravený začať svoju misiu. Napíš 'vstup' pre pohyb.");
         boolean continueGame = true;
@@ -48,11 +65,11 @@ public class Game {
             command = this.player.getCommandInstance().playerInput();
             this.player.getCommandInstance().commandCheck(command);
             if (command.equals("vstup")) {
-                if (firstEntry) {
-                    getCurrentRoomInfo();
-                    firstEntry = false;
+                if (this.firstEntry) {
+                    this.getCurrentRoomInfo();
+                    this.firstEntry = false;
                 }
-                if (!firstEntry){
+                if (!this.firstEntry) {
                     boolean continueAction = true;
                     while (continueAction) {
                         System.out.println("Zvol dalsi krok:");
@@ -67,7 +84,7 @@ public class Game {
                                 do {
                                     command = this.player.getCommandInstance().playerInput();
                                     this.player.getCommandInstance().commandCheck(command);
-                                    actionCompleted = performActionInRoom(command); // Vykonanie akcie
+                                    actionCompleted = this.performActionInRoom(command); // Vykonanie akcie
                                     if (actionCompleted) {
                                         // Ďalšie pokyny pre hráča
                                         System.out.println("Teraz môžeš zadať ďalší príkaz: prehľadaj, bojuj, použi, ukonci");
@@ -101,13 +118,23 @@ public class Game {
         }
     }
 
+    /**
+     * Displays information about the current room where the player is located.
+     */
     public void getCurrentRoomInfo() {
-        Room currentRoom = hraciaPlocha[this.player.getX()][this.player.getY()]; // Získaj aktuálnu miestnosť z hracej plochy
+        Room currentRoom = this.hraciaPlocha[this.player.getX()][this.player.getY()]; // Získaj aktuálnu miestnosť z hracej plochy
         System.out.println("Nachádzaš sa v miestnosti: " + currentRoom.getName());
     }
 
+    /**
+     * Executes the chosen action in the room based on the given command.
+     *
+     * @param action The command to be executed in the room
+     * @return True if the action was executed, otherwise False
+     */
     public boolean performActionInRoom(String action) {
         Room room = this.hraciaPlocha[this.player.getX()][this.player.getY()];
+        String command = "";
         switch (action) {
             case "prehľadaj":
                 System.out.println("Prehľadávaš miestnosť.");
@@ -126,6 +153,8 @@ public class Game {
                 } else {
                     System.out.println("Nasiel si enemy: " + room.getEnemy().getName() + " Do utoku!");
                     this.player.displaySpecialCommands();
+                    command = this.player.getCommandInstance().playerInput();
+
                 }
                 return true; //Akcia sa vykonala
             case "použi":
@@ -154,3 +183,7 @@ public class Game {
         return false; //Akcia nebola vykonana
     }
 }
+//Postavy hodnoty statov od 1 - 10;
+// Paladin staty - name: Paladin, att: 3, hp: 7, defense: 10
+// Ranger staty - name: Ranger, att: 6, hp: 3, defense: 5
+// Warrior staty - name: Warrior, att: 8, hp: 5, def: 6
