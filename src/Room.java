@@ -48,7 +48,7 @@ public enum Room {
      * @return The x-coordinate of the room.
      */
     public int getX() {
-        return x;
+        return this.x;
     }
     /**
      * Retrieve the y-coordinate of the room.
@@ -56,7 +56,7 @@ public enum Room {
      * @return The y-coordinate of the room.
      */
     public int getY() {
-        return y;
+        return this.y;
     }
 
     /**
@@ -83,6 +83,6 @@ public enum Room {
      * @return The name of the room.
      */
     public String getName() {
-        return name;
+        return this.name;
     }
 }

@@ -78,20 +78,23 @@ public class Player {
             case "3":
                 this.classOfPlayer = new Paladin("Paladin", 3, 7, 10);
                 character = "Paladin";
+                notInput = "correct";
                 break;
             case "2":
                 this.classOfPlayer = new Ranger("Ranger", 6, 3, 5);
                 character = "Ranger";
+                notInput = "correct";
                 break;
             case "1":
                 this.classOfPlayer = new Warrior("Warrior", 8, 5, 7);
                 character = "Warrior";
+                notInput = "correct";
                 break;
             default:
                 System.out.println("Nepoznam zvolenu postavu, zadaj platny vstup.");
                 notInput = "";
         }
-        if (notInput == "") {
+        if (notInput.equals("")) {
             this.chooseCharacter(command);
         } else {
             System.out.format("Zvolil si postavu: %s \n", character);
