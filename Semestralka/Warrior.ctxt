@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Warrior
+comment0.text=\r\n\ The\ Ranger\ class\ represents\ a\ character\ of\ type\ Ranger\ in\ the\ game.\r\n\ It\ inherits\ attributes\ and\ methods\ from\ the\ ClassOfPlayer\ abstract\ class.\r\n\r\n\ @author\ FILIP\ \u0160upol\u00EDk\r\n\ @version\ 1.0\r\n
+comment1.params=name\ attack\ hitpoints\ defense
+comment1.target=Warrior(java.lang.String,\ int,\ int,\ int)
+comment1.text=\r\n\ Constructor\ for\ the\ Warrior\ class.\r\n\ Initializes\ the\ Warrior\ character\ with\ specified\ attributes.\r\n\r\n\ @param\ name\ \ \ \ \ The\ name\ of\ the\ Ranger\ character\r\n\ @param\ attack\ \ \ The\ attack\ points\ of\ the\ Ranger\r\n\ @param\ hitpoints\ The\ hit\ points\ of\ the\ Ranger\r\n\ @param\ defense\ \ The\ defense\ points\ of\ the\ Ranger\r\n
+comment2.params=command
+comment2.target=void\ use(java.lang.String)
+comment2.text=\r\n\ Overrides\ the\ use\ method\ to\ define\ specific\ actions\ for\ the\ Ranger\ character\ based\ on\ the\ provided\ command.\r\n\r\n\ @param\ command\ The\ command\ representing\ the\ action\ the\ Ranger\ will\ perform\r\n
+comment3.params=
+comment3.target=void\ mightyStrike()
+comment3.text=\r\n\ Increases\ the\ Warrior's\ attack\ by\ 5\ when\ using\ the\ Aimed\ Shot\ ability.\r\n
+comment4.params=
+comment4.target=void\ shieldBash()
+comment4.text=\r\n\ Increases\ the\ Ranger's\ defense\ by\ 3\ when\ using\ the\ Stealth\ ability.\r\n
+comment5.params=
+comment5.target=void\ defensiveStance()
+comment5.text=\r\n\ Temporarily\ increases\ both\ the\ warrior's\ defense\ and\ attack\ by\ 2\r\n
+comment6.params=
+comment6.target=void\ warCry()
+comment6.text=\r\n\ Temporarily\ decrease\ the\ Warrior's\ defense\ by\ 2\ but\ increase\ attack\ by\ 3\ when\ using\ the\ War\ Cry\ ability.\r\n
+numComments=7

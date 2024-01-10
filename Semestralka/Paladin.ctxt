@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Paladin
+comment0.text=\r\n\ The\ Paladin\ class\ represents\ a\ character\ of\ the\ Paladin\ class\ in\ the\ game.\r\n\ It\ extends\ the\ ClassOfPlayer\ abstract\ class\ and\ implements\ specific\ abilities\ of\ a\ Paladin.\r\n\ @author\ Filip\ \u0160upol\u00EDk\r\n\ @version\ 1.0\r\n
+comment1.params=name\ attack\ hitpoints\ defense
+comment1.target=Paladin(java.lang.String,\ int,\ int,\ int)
+comment1.text=\r\n\ Constructs\ a\ Paladin\ object\ with\ specified\ attributes.\r\n\r\n\ @param\ name\ \ \ \ \ The\ name\ of\ the\ Paladin\r\n\ @param\ attack\ \ \ The\ attack\ power\ of\ the\ Paladin\r\n\ @param\ hitpoints\ The\ hitpoints\ (health)\ of\ the\ Paladin\r\n\ @param\ defense\ \ The\ defense\ capability\ of\ the\ Paladin\r\n
+comment2.params=command
+comment2.target=void\ use(java.lang.String)
+comment2.text=\r\n\ Defines\ the\ usage\ of\ various\ abilities\ by\ the\ Paladin\ based\ on\ given\ commands.\r\n\r\n\ @param\ command\ The\ command\ representing\ the\ ability\ the\ Paladin\ wants\ to\ use\r\n
+comment3.params=
+comment3.target=void\ useDivineSmite()
+comment3.text=\r\n\ dmg\ \=\ damage\r\n\ Adds\ dmg\ by\ 3\ to\ Paladin\ dmg\r\n
+comment4.params=
+comment4.target=void\ useLayOnHands()
+comment4.text=\r\n\ Ability\ for\ healing\ missing\ health\r\n
+comment5.params=
+comment5.target=void\ useAuraOfProtection()
+comment5.text=\r\n\ Player\ increase\ his\ defense\ to\ take\ less\ dmg\r\n
+comment6.params=receivedDamage
+comment6.target=void\ useRighteousRetribution(int)
+comment6.text=\r\n\ After\ receiving\ dmg,\ he\ takes\ some\ dmg\ as\ bonus\ dmg\ to\ his\ abilities\r\n\ @param\ receivedDamage\r\n
+comment7.params=receivedDamage
+comment7.target=int\ calculateBonusDamage(int)
+comment7.text=\r\n\ Calculation\ for\ bonus\ dmg\r\n\ @param\ receivedDamage\r\n\ @return\r\n
+numComments=8

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Room
+comment0.text=\r\n\ Enum\ representing\ different\ rooms\ in\ the\ game\ world.\r\n\ Each\ room\ has\ a\ name,\ coordinates,\ an\ item,\ and\ a\ potential\ enemy\ associated\ with\ it.\r\n\r\n\ @author\ FILIP\ \u0160upol\u00EDk\r\n\ @version\ 1.0\r\n
+comment1.params=name\ x\ y\ item\ enemy
+comment1.target=Room(java.lang.String,\ int,\ int,\ Item,\ Enemy)
+comment1.text=\r\n\ Constructor\ for\ each\ Room\ enum\ constant.\r\n\ Initializes\ the\ name,\ coordinates,\ item,\ and\ enemy\ associated\ with\ the\ room.\r\n\r\n\ @param\ name\ \ The\ name\ of\ the\ room.\r\n\ @param\ x\ \ \ \ \ The\ x-coordinate\ of\ the\ room.\r\n\ @param\ y\ \ \ \ \ The\ y-coordinate\ of\ the\ room.\r\n\ @param\ item\ \ The\ item\ present\ in\ the\ room\ (can\ be\ null\ if\ no\ item\ exists).\r\n\ @param\ enemy\ The\ enemy\ present\ in\ the\ room\ (can\ be\ null\ if\ no\ enemy\ exists).\r\n
+comment2.params=
+comment2.target=int\ getX()
+comment2.text=\r\n\ Retrieve\ the\ x-coordinate\ of\ the\ room.\r\n\r\n\ @return\ The\ x-coordinate\ of\ the\ room.\r\n
+comment3.params=
+comment3.target=int\ getY()
+comment3.text=\r\n\ Retrieve\ the\ y-coordinate\ of\ the\ room.\r\n\r\n\ @return\ The\ y-coordinate\ of\ the\ room.\r\n
+comment4.params=
+comment4.target=Item\ getItem()
+comment4.text=\r\n\ Retrieve\ the\ item\ present\ in\ the\ room.\r\n\r\n\ @return\ The\ item\ in\ the\ room\ (can\ be\ null\ if\ no\ item\ exists).\r\n
+comment5.params=
+comment5.target=Enemy\ getEnemy()
+comment5.text=\r\n\ Retrieve\ the\ enemy\ present\ in\ the\ room.\r\n\r\n\ @return\ The\ enemy\ in\ the\ room\ (can\ be\ null\ if\ no\ enemy\ exists).\r\n
+comment6.params=
+comment6.target=java.lang.String\ getName()
+comment6.text=\r\n\ Retrieve\ the\ name\ of\ the\ room.\r\n\r\n\ @return\ The\ name\ of\ the\ room.\r\n
+numComments=7

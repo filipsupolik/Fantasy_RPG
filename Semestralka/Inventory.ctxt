@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Inventory
+comment0.text=\r\n\ The\ Inventory\ class\ manages\ the\ items\ that\ the\ player\ collects\ during\ the\ game.\r\n\ It\ allows\ adding,\ deleting,\ displaying,\ and\ retrieving\ items\ from\ the\ inventory.\r\n\ @author\ Filip\ \u0160upol\u00EDk\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=Inventory()
+comment1.text=\r\n\ Constructs\ an\ Inventory\ object\ initializing\ the\ list\ of\ items.\r\n
+comment2.params=
+comment2.target=void\ showInventory()
+comment2.text=\r\n\ Displays\ the\ list\ of\ items\ in\ the\ inventory.\r\n
+numComments=3

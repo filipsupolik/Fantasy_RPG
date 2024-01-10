@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Enemy
+comment0.text=\r\n\ Class\ representing\ all\ Enemies\ in\ the\ game.\r\n\ This\ class\ defines\ functionalities\ for\ all\ enemies\ in\ the\ game.\r\n\ It\ provides\ methods\ to\ manipulate\ the\ enemie's\ behaviour\r\n\ Class\ inherits\ attributes\ and\ methods\ from\ ClassOfPlayer\ class\r\n\ @author\ Filip\ \u0160upol\u00EDk\r\n\ @version\ 1.0\r\n
+comment1.params=name\ attack\ hitpoints\ defense
+comment1.target=Enemy(java.lang.String,\ int,\ int,\ int)
+comment2.params=command
+comment2.target=void\ use(java.lang.String)
+comment2.text=\r\n\ Implement\u00E1cia\ abstraktnej\ met\u00F3dy\ pou\u017Eitia\ pre\ nepriate\u013Ea.\r\n\r\n\ @param\ command\ Pr\u00EDkaz,\ ktor\u00FD\ m\u00E1\ by\u0165\ vykonan\u00FD\r\n
+comment3.params=
+comment3.target=void\ attack()
+comment3.text=\r\n\ Met\u00F3da\ pre\ vykonanie\ \u00FAtoku\ nepriate\u013Ea.\r\n\r\n\ Implement\u00E1cia\ \u00FAtoku\ pre\ konkr\u00E9tnych\ nepriate\u013Eov\ bude\ obsahova\u0165\ detaily\ \u00FAtoku\ a\ jeho\ d\u00F4sledky.\r\n
+numComments=4

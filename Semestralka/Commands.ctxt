@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Commands
+comment0.text=\r\n\ Class\ that\ provides\ all\ and\ available\ commands\ for\ user\ to\ use\r\n\ It\ contains\ methods\ for\ checking\ correct\ input,\ adding\ new\ commands\ and\ to\ enable\ user\ input\r\n\ @author\ Filip\ \u0160upol\u00EDk\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=Commands()
+comment1.text=\r\n\ Initialize\ and\ creates\ list\ of\ commands\r\n\ After\ creating\ Commands\ instance\ it\ enables\ user\ input\ for\ user\r\n
+comment2.params=command
+comment2.target=java.lang.String\ commandCheck(java.lang.String)
+comment2.text=\r\n\ Checks\ if\ the\ given\ command\ is\ valid\ from\ the\ available\ commands\ list.\r\n\r\n\ @param\ command\ the\ command\ to\ be\ checked\r\n\ @return\ the\ validated\ command\ if\ it\ exists;\ empty\ string\ if\ not\ recognized\r\n
+comment3.params=command
+comment3.target=void\ addNewCommand(java.lang.String)
+comment3.text=\r\n\ Adds\ a\ new\ command\ to\ the\ list\ of\ available\ commands.\r\n\r\n\ @param\ command\ the\ command\ to\ be\ added\r\n
+comment4.params=
+comment4.target=java.util.ArrayList\ getAllComands()
+comment4.text=\r\n\ Retrieves\ the\ list\ of\ all\ available\ commands.\r\n\r\n\ @return\ ArrayList\ containing\ all\ available\ commands\r\n
+comment5.params=
+comment5.target=void\ createCommandsList()
+comment5.text=\r\n\ Initializes\ the\ list\ of\ available\ commands\ with\ predefined\ values.\r\n
+comment6.params=
+comment6.target=java.lang.String\ charChooseCheck()
+comment6.text=\r\n\ Checks\ and\ retrieves\ the\ user's\ choice\ for\ character\ selection.\r\n\r\n\ @return\ the\ user's\ choice\ for\ character\ selection\ as\ a\ string\r\n
+comment7.params=
+comment7.target=java.lang.String\ playerInput()
+comment7.text=\r\n\ Retrieves\ and\ returns\ the\ user\ input.\r\n\r\n\ @return\ the\ user\ input\ as\ a\ string\r\n
+numComments=8

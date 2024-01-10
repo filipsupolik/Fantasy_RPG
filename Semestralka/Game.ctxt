@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Game
+comment0.text=\r\n\ The\ class\ represents\ the\ game\ engine,\ managing\ the\ game's\ flow.\r\n\ It\ allows\ the\ player\ to\ interact\ with\ rooms,\ select\ a\ character,\ and\ perform\ various\ actions.\r\n\ It\ encompasses\ the\ game\ loop\ and\ methods\ for\ managing\ the\ game\ flow.\r\n\ @author\ Filip\ \u0160upol\u00EDk\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=Game()
+comment1.text=\r\n\ Constructor\ creating\ an\ instance\ of\ the\ `Game`\ class.\r\n\ Initializes\ necessary\ variables\ and\ the\ game\ environment.\r\n\ Contains\ main\ loop\ for\ game\r\n
+comment2.params=
+comment2.target=void\ addRooms()
+comment2.text=\r\n\ Initializes\ the\ game\ rooms\ and\ adds\ them\ to\ the\ game\ space.\r\n
+comment3.params=
+comment3.target=void\ gameLoop()
+comment3.text=\r\n\ Initiates\ the\ main\ game\ loop,\ where\ the\ player\ interacts\ with\ the\ game.\r\n\ Allows\ character\ selection,\ movement,\ room\ interaction,\ and\ action\ execution.\r\n
+comment4.params=
+comment4.target=void\ getCurrentRoomInfo()
+comment4.text=\r\n\ Displays\ information\ about\ the\ current\ room\ where\ the\ player\ is\ located.\r\n
+comment5.params=action
+comment5.target=boolean\ performActionInRoom(java.lang.String)
+comment5.text=\r\n\ Executes\ the\ chosen\ action\ in\ the\ room\ based\ on\ the\ given\ command.\r\n\r\n\ @param\ action\ The\ command\ to\ be\ executed\ in\ the\ room\r\n\ @return\ True\ if\ the\ action\ was\ executed,\ otherwise\ False\r\n
+numComments=6

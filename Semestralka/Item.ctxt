@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Item
+comment0.text=\r\n\ The\ Item\ class\ represents\ an\ item\ that\ can\ be\ collected\ and\ used\ within\ the\ game.\r\n\ It\ contains\ information\ about\ the\ name\ and\ type\ of\ the\ item.\r\n\ @author\ Filip\ \u0160upol\u00EDk\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment1.text=\r\n\ Retrieves\ the\ name\ of\ the\ item.\r\n\r\n\ @return\ The\ name\ of\ the\ item\r\n
+comment2.params=name
+comment2.target=void\ setName(java.lang.String)
+comment2.text=\r\n\ Sets\ the\ name\ of\ the\ item.\r\n\r\n\ @param\ name\ The\ name\ to\ be\ set\ for\ the\ item\r\n
+comment3.params=
+comment3.target=void\ use()
+comment3.text=\r\n\ Defines\ the\ action\ to\ be\ performed\ when\ using\ the\ item.\r\n\ This\ method\ can\ be\ implemented\ to\ specify\ the\ behavior\ of\ using\ the\ item.\r\n
+numComments=4

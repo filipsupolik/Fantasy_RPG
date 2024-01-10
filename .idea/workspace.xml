@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Fantasy_RPG:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31ec13a3-53ed-4e4f-b1b6-1d76f7fa83dc" name="Changes" comment="All implementation done, except fighting. Everything commented.">
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+    <list default="true" id="31ec13a3-53ed-4e4f-b1b6-1d76f7fa83dc" name="Changes" comment="Checkstyle is working. All mistakes fixed. App is ready to be presented.">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Fantasy_RPG_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/ClassOfPlayer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/ClassOfPlayer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/ClassOfPlayer.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/ClassOfPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Commands.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Commands.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Commands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Enemy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Enemy.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/EnemyAssasin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/EnemyAssasin.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/EnemyAssasin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/EnemyGoblin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/EnemyGoblin.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/EnemyGoblin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/EnemyWarrior.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/EnemyWarrior.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/EnemyWarrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Game.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Game.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Inventory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Inventory.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Item.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Item.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/ItemType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/ItemType.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/ItemType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Main.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Paladin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Paladin.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Paladin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Player.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/README.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Ranger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Ranger.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Ranger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Room.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Room.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Warrior.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Warrior.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/__SHELL5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/__SHELL5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semestralka/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,29 +100,33 @@
     </option>
   </component>
   <component name="ProjectId" id="2YAv33CpPEvVGxuG3ZcnUtxSGDm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.infernus.idea.checkstyle.CheckStyleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/FILIP/Documents/Informatika/Inf1/kod/Semestralky/Fantasy_RPG_Šupolík_5Zyi11",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -113,7 +174,14 @@
       <workItem from="1704113694325" duration="2217000" />
       <workItem from="1704140281703" duration="10546000" />
       <workItem from="1704192814153" duration="2385000" />
-      <workItem from="1704480858364" duration="739000" />
+      <workItem from="1704480858364" duration="893000" />
+      <workItem from="1704481773877" duration="838000" />
+      <workItem from="1704483794476" duration="1999000" />
+      <workItem from="1704485977714" duration="273000" />
+      <workItem from="1704487198217" duration="750000" />
+      <workItem from="1704493497374" duration="490000" />
+      <workItem from="1704544305229" duration="508000" />
+      <workItem from="1704874227570" duration="1981000" />
     </task>
     <task id="LOCAL-00001" summary="Create class for common commands">
       <created>1700087719821</created>
@@ -164,7 +232,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704150994592</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Checkstyle is working. All mistakes fixed. App is ready to be presented.">
+      <created>1704481652418</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704481652418</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Checkstyle is working. All mistakes fixed. App is ready to be presented.">
+      <created>1704481741851</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704481741851</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +264,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Create class for common commands" />
     <MESSAGE value="Add method for player abilities, and start implementing abilities" />
     <MESSAGE value="Implemented choosing character" />
@@ -189,7 +272,8 @@
     <MESSAGE value="Adding rooms for player movement" />
     <MESSAGE value="Started with player movement, need some bug fixing and fix some implementation" />
     <MESSAGE value="All implementation done, except fighting. Everything commented." />
-    <option name="LAST_COMMIT_MESSAGE" value="All implementation done, except fighting. Everything commented." />
+    <MESSAGE value="Checkstyle is working. All mistakes fixed. App is ready to be presented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Checkstyle is working. All mistakes fixed. App is ready to be presented." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

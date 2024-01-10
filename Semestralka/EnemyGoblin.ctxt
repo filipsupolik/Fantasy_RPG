@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=EnemyGoblin
+comment0.text=\r\n\ Class\ for\ specific\ enemy\ type\ EnemyGoblin\r\n\ Class\ inherits\ attributes\ and\ methods\ from\ Enemy\ class\r\n\ @author\ Filip\ \u0160upol\u00EDk\r\n\ @version\ 1.0\r\n
+comment1.params=name\ attack\ hitpoints\ defense
+comment1.target=EnemyGoblin(java.lang.String,\ int,\ int,\ int)
+numComments=2
